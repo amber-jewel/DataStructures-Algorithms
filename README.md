@@ -9,6 +9,8 @@
 6. Advanced Sorting
 ***
 ## Array
-. . . Array က အသုံးအများဆုံး data storage structure ဖြစ်ပါတယ်။ . . .
-. . . Array ဆိုတာက Java မှာ object တွေ ဖြစ်ကြတယ်။ . . .
+Array က အသုံးအများဆုံး data storage structure ဖြစ်ပါတယ်။
+
+
+Array ဆိုတာက Java မှာ object တွေ ဖြစ်ကြတယ်။
 
