@@ -8,3 +8,6 @@
 5. Recursion
 6. Advanced Sorting
 ***
+## Array
+Array က အသုံးအများဆုံး data storage structure ဖြစ်ပါတယ်။
+Array ဆိုတာက Java မှာ object တစ်ခုဘဲ။
