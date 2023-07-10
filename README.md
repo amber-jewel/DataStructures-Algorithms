@@ -31,4 +31,9 @@ Array ရဲ့ အားနည်းချက်ကတော့ fixed size ဖ�
 
 
 
-
+(Unodered array) ကြီးစဉ်ငယ်လိုက် or ငယ်စဉ်ကြီးလိုက် array ထဲကို တန်ဖိုးထည့်ရင် အရမ်းမြန်ပါတယ်။
+```java
+int nElems;
+int[] intArr = new int[5];
+intArr[nElems++] = 2;
+```
