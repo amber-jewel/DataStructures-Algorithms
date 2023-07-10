@@ -15,7 +15,7 @@ Array က အသုံးအများဆုံး data storage structure တ�
 Array ထဲမှာ ပါဝင်တဲ့ data တွေ ရဲ့ type တွေဟာ တူညီတဲ့ data type တွေ ဖြစ်ရပါ့မယ်။
 ```java
 int[] intArr = new int[5];
-<!--strArr သည် string data type တွေဘဲ လက်ခံနိုင်တယ်။!-->
 String[] strArr = new String[5];
+intArr သည် integer data type တွေဘဲ ရှိတဲ့ integer တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။ strArr သည် string data type တွေဘဲရှိတဲ့ string တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။
 ```
 
