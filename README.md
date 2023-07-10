@@ -12,7 +12,7 @@
 Array က အသုံးအများဆုံး data storage structure တစ်ခု ဖြစ်ပါတယ်။
 
 Array ကို သုံးပုံသုံးနည်း 2 နည်း ရှိတယ်။
-array အခန်းတွေထဲကို တန်ဖိုးထည့်ပြီး သုံးတဲ့နည်း နဲ့ new operator ကို သုံးပြီး object ဆောက်သုံးတာ
+array အခန်းတွေထဲကို (initialize) တန်ဖိုးထည့်ပြီး သုံးတဲ့နည်း နဲ့ new operator ကို သုံးပြီး object ဆောက်သုံးတဲ့နည်း
 ```java
 int[] intArr = {1, 2, 3 };
 int[] anotherIntArr = new int[3];
