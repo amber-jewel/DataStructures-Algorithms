@@ -17,5 +17,6 @@ Array ထဲမှာ ပါဝင်တဲ့ data တွေ ရဲ့ type တ
 int[] intArr = new int[5];
 -- strArr သည် string data type တွေဘဲ လက်ခံနိုင်တယ်။
 String[] strArr = new String[5];
-```[]: # intArr သည် integer data type တွေဘဲ လက်ခံနိုင်တယ်။
+```
+[]: # intArr သည် integer data type တွေဘဲ လက်ခံနိုင်တယ်။
 
