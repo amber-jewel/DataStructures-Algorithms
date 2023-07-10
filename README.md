@@ -44,9 +44,16 @@ output: intArr = { 2, 5, 3 };
 
 (Ordered array) ငယ်စဉ်ကြီးလိုက် (descending) or ကြီးစဉ်ငယ်လိုက် (ascending) စီထားသော array ထဲကို တန်ဖိုးထည့်ရင် (insert) run time complexity အရ ကြည့်ရင် O(N) ဖြစ်ပါတယ်။
 ```java
+int nElems;
 int[] intArr = new int[5];
 intArr[nElems++] = 2;
 intArr[nElems++] = 5;
 intArr[nElems++] = 3;
 output: intArr = { 2, 3, 5 };
 ```
+
+
+Array အခန်း‌တွေထဲက တန်ဖိုးကို ဖျက်ချင်ရင် (delete operation) သူ့ရဲ့ လုပ်ဆောင်ချက်သည် runtime complexity အရ ကြည့်ရင် O(N) ဖြစ်ပါတယ်။ 
+- delete algorithm
+   - အရင်ဆုံး ဖျက်မယ့်တန်ဖိုးရဲ့ array အခန်းတိုင်းကို လိုက်ရှာတယ်။
+   - တွေ့ရင် ဖျက်မယ်, ဖျက်ပြီးရင် ဖျက်တဲ့ array ခန်းရဲ့ နောက်မှာရိှတဲ့ တန်ဖိုးတွေကို move down လုပ်မယ်။ မတွေ့ရင် operation fail မယ်။
