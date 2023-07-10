@@ -1,4 +1,5 @@
 # DataStructures-Algorithms
+## Contents
 1. Array
 2. Simple Sorting
 3. Stacks and Queues
