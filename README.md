@@ -9,8 +9,11 @@
 6. Advanced Sorting
 ***
 ## Array
-Array က အသုံးအများဆုံး data storage structure ဖြစ်ပါတယ်။
+Array က အသုံးအများဆုံး data storage structure တစ်ခု ဖြစ်ပါတယ်။
 
 
-Array ဆိုတာက Java မှာ object တွေ ဖြစ်ကြတယ်။
-
+Array ထဲမှာ ပါဝင်တဲ့ data တွေ ရဲ့ type တွေဟာ တူညီတဲ့ data type တွေ ဖြစ်ရပါ့မယ်။
+- example: ```java
+  int[] intArr = new int[5];
+  int[] intArr = { 1, 2, 3, 4, 5 };
+  ```
