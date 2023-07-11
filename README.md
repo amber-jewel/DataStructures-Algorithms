@@ -58,7 +58,11 @@ output: intArr = { 2, 3, 5 };
 - insert algorithm into odered array
   - ထည့်မယ့် data သည် နဂိုရှိပြီးသား array အခန်းတိုင်းရဲ့ data နဲ့ နှိုင်းယှဉ်ပြီး ထည့်မယ့်နေရာကို လိုက်ရှာမယ်။
   ```java
-  for (int i = 0, i < array.length; i++) { if (array[i] > ထည့်မယ့် data အသစ်) { break; } }
+  for (int i = 0, i < array.length; i++)
+  { if (array[i] > ထည့်မယ့် data အသစ်)
+   { break; }
+  }
+  ```
   - နေရာတွေ့တာနဲ့ အဲ့နေရာထဲမှာ ရှိတဲ့ တန်ဖိုးကနေစပြီး move up တစ်ခန်းတိုးပြီး နဂို data ပြန်ထည့်သွားမယ်။
 
 
