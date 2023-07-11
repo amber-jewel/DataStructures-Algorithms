@@ -41,7 +41,7 @@ intArr[nElems++] = 3;
 output: intArr = { 2, 5, 3, 0, 0 };
 ```
 - insert algorithm into unodered array
-  - insert new data into a vacant cell
+  - insert new data into a next vacant cell (array ရဲ့ နောက်လွတ်မယ့် အခန်းထဲကို data ထည့်မယ်။)
   - runtime complexity O(1) constant time
   
 
@@ -55,6 +55,11 @@ intArr[nElems++] = 5;
 intArr[nElems++] = 3;
 output: intArr = { 2, 3, 5 };
 ```
+- insert algorithm into odered array
+  - ထည့်မယ့် data သည် နဂိုရှိပြီးသား array အခန်းတိုင်းရဲ့ data နဲ့ နှိုင်းယှဉ်ပြီး ထည့်မယ့်နေရာကို လိုက်ရှာမယ်။
+  ```java
+  for (int i = 0, i < array.length; i++) { if (array[i] > ထည့်မယ့် data အသစ်) { break; } }
+  - နေရာတွေ့တာနဲ့ အဲ့နေရာထဲမှာ ရှိတဲ့ တန်ဖိုးကနေစပြီး move up တစ်ခန်းတိုးပြီး နဂို data ပြန်ထည့်သွားမယ်။
 
 
 Array အခန်း‌တွေထဲက တန်ဖိုးကို ဖျက်ချင်ရင် (delete operation) သူ့ရဲ့ လုပ်ဆောင်ချက်သည် runtime complexity အရ ကြည့်ရင် O(N) ဖြစ်ပါတယ်။ 
