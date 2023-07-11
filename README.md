@@ -111,6 +111,10 @@ Array အခန်းတွေထဲက တန်ဖိုးတစ်ခုခ�
 - update algorithm
   - နဂို ရှိပြီးသား update လုပ်ချင်တဲ့ တန်ဖိုးကို array ရဲ့ အခန်းတိုင်းကို လိုက်ရှာမယ်။
   - တွေ့ရင် အဲ့ array အခန်းကို update လုပ်မယ်။ မတွေ့ရင် operation fail မယ်။
-```
-array[index] = update လုပ်ချင်တဲ့ တန်ဖိုး;
-```
+   ```java
+   for (int i = 0; i < array.length; i++) {
+     if (array[i] == နဂို ရှိပြီးသား update လုပ်ချင်တဲ့ တန်ဖိုး) {
+       array[index] = update လုပ်ချင်တဲ့ တန်ဖိုး အသစ်;
+      }
+   }
+   ```
