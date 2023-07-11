@@ -67,8 +67,8 @@ output: intArr = { 2, 3, 5 };
   ```
   - နေရာတွေ့တာနဲ့ အဲ့နေရာထဲမှာ ရှိတဲ့ တန်ဖိုးကနေစပြီး move up တစ်ခန်းတိုးပြီး နဂို data ပြန်ထည့်သွားမယ်။
   ```java
-  for (int k = array.length - 1; k > i; k--) {
-    array[k + 1] = array[k];
+  for (int k = array.length; k > i; k--) {
+    array[k] = array[k - 1];
   }
   ```
   - ပြီးရင် data အသစ် ထည့်မယ်။
