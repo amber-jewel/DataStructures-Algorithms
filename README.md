@@ -40,6 +40,10 @@ intArr[nElems++] = 5;
 intArr[nElems++] = 3;
 output: intArr = { 2, 5, 3, 0, 0 };
 ```
+- insert algorithm into unodered array
+  - insert new data into a vacant cell
+  - runtime complexity O(1) constant time
+  
 
 
 (Ordered array) ငယ်စဉ်ကြီးလိုက် (descending) or ကြီးစဉ်ငယ်လိုက် (ascending) စီထားသော array ထဲကို တန်ဖိုးထည့်ရင် (insert) run time complexity အရ ကြည့်ရင် O(N) ဖြစ်ပါတယ်။
