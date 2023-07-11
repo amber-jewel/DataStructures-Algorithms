@@ -31,14 +31,14 @@ Array ရဲ့ အားနည်းချက်ကတော့ fixed size ဖ�
 
 
 
-(Unodered array) ကြီးစဉ်ငယ်လိုက် (descending ) or ငယ်စဉ်ကြီးလိုက် (ascending) စီမထားသော array ထဲကို တန်ဖိုးထည့်ရင် (insert) အရမ်းမြန်ပါတယ်။ Array ရဲ့ နောက်လွတ်တဲ့အခန်းတွေထဲကို တိုးတိုးပြီး တန်ဖိုးထည့်သွားတဲ့ အတွက်ကြောင့် ဖြစ်ပါတယ်။ ဒါကြောင့် run time complexity အရ ကြည့်ရင် O(1) constant time ဖြစ်ပါတယ်။
+(Unodered array) ကြီးစဉ်ငယ်လိုက် (ascending) or ငယ်စဉ်ကြီးလိုက် (descending) စီမထားသော array ထဲကို တန်ဖိုးထည့်ရင် (insert) အရမ်းမြန်ပါတယ်။ Array ရဲ့ နောက်လွတ်တဲ့အခန်းတွေထဲကို တိုးတိုးပြီး တန်ဖိုးထည့်သွားတဲ့ အတွက်ကြောင့် ဖြစ်ပါတယ်။ ဒါကြောင့် runtime complexity အရ ကြည့်ရင် O(1) constant time ဖြစ်ပါတယ်။
 ```java
 int nElems;
 int[] intArr = new int[5];
 intArr[nElems++] = 2;
 intArr[nElems++] = 5;
 intArr[nElems++] = 3;
-output: intArr = { 2, 5, 3 };
+output: intArr = { 2, 5, 3, 0, 0 };
 ```
 
 
