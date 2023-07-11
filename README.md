@@ -58,13 +58,23 @@ output: intArr = { 2, 3, 5 };
 - insert algorithm into odered array
   - ထည့်မယ့် data သည် နဂိုရှိပြီးသား array အခန်းတိုင်းရဲ့ data နဲ့ နှိုင်းယှဉ်ပြီး ထည့်မယ့်နေရာကို လိုက်ရှာမယ်။
   ```java
-  for (int i = 0, i < array.length; i++) {
+  int i;
+  for (i = 0, i < array.length; i++) {
    if (array[i] > ထည့်မယ့် data အသစ်) {
     break;
    }
   }
   ```
   - နေရာတွေ့တာနဲ့ အဲ့နေရာထဲမှာ ရှိတဲ့ တန်ဖိုးကနေစပြီး move up တစ်ခန်းတိုးပြီး နဂို data ပြန်ထည့်သွားမယ်။
+  ```java
+  for (int k = array.length - 1; k > i; k--) {
+    array[k + 1] = array[k];
+  }
+  ```
+  - ပြီးရင် data အသစ် ထည့်မယ်။
+  ```java
+  array[i] = ထည့်မယ့် data အသစ်;
+  ```
 
 
 Array အခန်း‌တွေထဲက တန်ဖိုးကို ဖျက်ချင်ရင် (delete operation) သူ့ရဲ့ လုပ်ဆောင်ချက်သည် runtime complexity အရ ကြည့်ရင် O(N) ဖြစ်ပါတယ်။ 
