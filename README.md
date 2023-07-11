@@ -42,6 +42,9 @@ output: intArr = { 2, 5, 3, 0, 0 };
 ```
 - insert algorithm into unodered array
   - insert new data into a next vacant cell (array ရဲ့ နောက်လွတ်မယ့် အခန်းထဲကို data ထည့်မယ်။)
+  ```java
+  array[index++] = ထည့်မယ့် data အသစ်;
+  ```
   - runtime complexity O(1) constant time
   
 
@@ -75,9 +78,25 @@ output: intArr = { 2, 3, 5 };
   ```java
   array[i] = ထည့်မယ့် data အသစ်;
   ```
+  - ပြီးရင် array အခန်းကို တစ်တိုးမယ်။
+  - runtime complexity O(N)
 
 
 Array အခန်း‌တွေထဲက တန်ဖိုးကို ဖျက်ချင်ရင် (delete operation) သူ့ရဲ့ လုပ်ဆောင်ချက်သည် runtime complexity အရ ကြည့်ရင် O(N) ဖြစ်ပါတယ်။ 
 - delete algorithm
    - အရင်ဆုံး ဖျက်မယ့်တန်ဖိုးရဲ့ array အခန်းတိုင်းကို လိုက်ရှာတယ်။
+  ```java
+  int i;
+  for (i = 0; i < array.length; i++) {
+    if (array[i] == ဖျက်မယ့် တန်ဖိုး) {
+      { break;
+      }
+  }
+  ```
    - တွေ့ရင် ဖျက်မယ်, ဖျက်ပြီးရင် ဖျက်တဲ့ array ခန်းရဲ့ နောက်မှာရိှတဲ့ တန်ဖိုးတွေကို move down လုပ်မယ်။ မတွေ့ရင် operation fail မယ်။
+  ```java
+  for (int k = i; k < array.length; k++) {
+    array[k] = array[k + 1];
+  }
+  ```
+  - ပြီးရင် array အခန်းကို တစ်လျှော့မယ်။
