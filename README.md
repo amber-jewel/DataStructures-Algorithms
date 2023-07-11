@@ -89,7 +89,8 @@ Array အခန်း‌တွေထဲက တန်ဖိုးကို ဖျ
   int i;
   for (i = 0; i < array.length; i++) {
     if (array[i] == ဖျက်မယ့် တန်ဖိုး) {
-      { break;
+      {
+        break;
       }
   }
   ```
