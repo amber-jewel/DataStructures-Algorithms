@@ -121,10 +121,10 @@ Array အခန်းတွေထဲက တန်ဖိုးတစ်ခုခ�
    - runtime complexity O(N)
 
 
-### Search
+### Search By Linear (Linear Search)
 ရှာချင်တဲ့ တန်ဖိုးကို array ရဲ့ အခန်းတိုင်းကို လိုက်ရှာမယ်။ ဒီလိုရှာတဲ့နည်းကို Linear Search လို့ ခေါ်ပါတယ်။
 
-- search algorithm
+- search algorithm by linear
    - ရှာချင်တဲ့ တန်ဖိုးကို array ရဲ့ အခန်းတိုင်းကို လိုက်ရှာမယ်။
      ```java
      for (int i = 0; i < array.length; i++) {
@@ -133,4 +133,32 @@ Array အခန်းတွေထဲက တန်ဖိုးတစ်ခုခ�
        }
      }
      ```
-  - မတေ့ရင် operation fail မယ်။
+   - မတွေ့ရင် operation fail မယ်။
+   - runtime complexity O(N)
+
+
+### Search By Binary (Binary Search)
+Array ကို ရှာချင်တဲ့ တန်ဖိုးနဲ့ နှိုင်ယှဉ်ပြီး တစ်ဝက် တစ်ဝက်စီ ခွဲပြီး ရှာမယ်။
+
+- search algorithm by binary
+  - array ကို တစ်ဝက်စီ ပိုင်းပြီး ရှာမယ်။
+  - ရှာချင်တဲ့ တန်ဖိုးက တစ်ဝက်ခွဲခံရတဲ့ array ရဲ့ တန်ဖိုးနဲ့နှိုင်းယှဉ်ပြီး သူ့ထက်ငယ်ရင် သူ့အောက်တစ်လျှော့ပြီး ထပ်ရှာမယ် ဒါမှမဟုတ် သူ့ထက်ကြီးရင် သူ့အထက်တစ်ပေါင်းပြီး ထပ်ရှာမယ်။
+  - ရှာချင်တဲ့တန်ဖိုးတွေ့ရင် လုပ်ဆောင်ချက်တစ်ခုခုလုပ်မယ်။ မတွေ့ရင် operation fail မယ်။
+    ```java
+    int[] arr = { 1, 3, 5, 7 , 9, 11 };
+    int key = 5;
+    while (true) {
+      int curIndex = (left + right)/2;
+      if (key == arr[curIndex) {
+        return arr[curIndex];
+      } else (left >= right) {
+        return arr.length;
+      } else {
+        if (key > arr[curIndex]) {
+          left = curIndex + 1;
+        } else {
+          right = curIndex - 1;
+        }
+      }
+    }
+    ```
