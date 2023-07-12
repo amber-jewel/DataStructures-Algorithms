@@ -184,4 +184,4 @@ Array အခန်းနှစ်ခန်း ရဲ့ တန်ဖိုးအ
          }
    }
    ```
-   4. runtime complexity O(N)2
+   4. runtime complexity O(N2)
