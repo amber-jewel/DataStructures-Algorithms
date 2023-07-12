@@ -176,7 +176,10 @@ Array အခန်းနှစ်ခန်း ရဲ့ တန်ဖိုးအ
    for (int i = 0; i < array.length - 1; i++) {
          for (int k = i + 1; k < array.length; k++) {
               if (array[i] > array[k]) {
-                  swap(i, k);
+                   // swap(i, k);
+                   int temp = array[i];
+                   array[i] = array[k];
+                   array[k] = temp;
               }
          }
    }
