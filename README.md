@@ -147,6 +147,8 @@ Array ကို ရှာချင်တဲ့ တန်ဖိုးနဲ့ �
     ```java
     int[] arr = { 1, 3, 5, 7 , 9, 11 };
     int key = 5;
+    int left = 0;
+    int right = arr.length - 1;
     while (true) {
       int curIndex = (left + right)/2;
       if (key == arr[curIndex) {
