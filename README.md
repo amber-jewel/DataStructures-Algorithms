@@ -75,6 +75,9 @@ Array ရဲ့ အားနည်းချက်ကတော့ fixed size ဖ�
   }
     ```
   - ပြီးရင် data အသစ် ထည့်မယ်။
+    ```java
+    array[i] = ထည့်မယ့် data အသစ်;
+    ```
   - ပြီးရင် array အခန်းကို တစ်တိုးမယ်။
   - runtime complexity O(N)
 
