@@ -173,13 +173,13 @@ Array အခန်းနှစ်ခန်း ရဲ့ တန်ဖိုးအ
   2. ဘယ်ဘက်အခန်းရဲ့ တန်ဖိုးက ညာဘက်အခန်းရဲ့ တန်ဖိုးထက် ကြီးနေရင် တန်ဖိုးအချင်းချင်း နေရာပြောင်းမယ် ဒါမှမဟုတ် loop ကို break လုပ်ပြီး နောက်အခန်းနှစ်ခန်း တန်ဖိုးချင်း ပြန်နှိုင်းယှဉ်မယ်။
   3. အကုန် data စီ မပြီးမချင်း အဆင့် i နဲ့ ii ကို လုပ်ဆောင်မယ်။
    ```java
-   for (int i = 0; i < array.length - 1; i++) {
-         for (int k = i + 1; k < array.length; k++) {
-              if (array[i] > array[k]) {
+   for (int out = array.length - 1; i > 0; out--) {
+         for (int in = 0; k < out; in++) {
+              if (array[in] > array[in + 1]) {
                    // swap(i, k);
-                   int temp = array[i];
-                   array[i] = array[k];
-                   array[k] = temp;
+                   int temp = array[in];
+                   array[in] = array[in + 1];
+                   array[in + 1] = temp;
               }
          }
    }
