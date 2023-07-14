@@ -176,7 +176,7 @@ Array အခန်းနှစ်ခန်း ရဲ့ တန်ဖိုးအ
    for (int out = array.length - 1; i > 0; out--) {
          for (int in = 0; k < out; in++) {
               if (array[in] > array[in + 1]) {
-                   // swap(i, k);
+                   // swap(in, in + 1);
                    int temp = array[in];
                    array[in] = array[in + 1];
                    array[in + 1] = temp;
