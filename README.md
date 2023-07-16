@@ -152,7 +152,7 @@ Array ကို ရှာချင်တဲ့ တန်ဖိုးနဲ့ �
       int curIndex = (left + right)/2;
       if (key == arr[curIndex) {
            return arr[curIndex];
-      } else (left >= right) {
+      } else (left > right) {
            return arr.length;
       } else {
         if (key > arr[curIndex]) {
