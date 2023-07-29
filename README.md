@@ -201,8 +201,8 @@ Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆ
        for (int in = out + 1; in < array.length - 1; in++) {
            if (array[in] < array[min]) {
               min = in;
-   }
-   }
+           }
+      }
    swap(out, min);
    }
    ```
