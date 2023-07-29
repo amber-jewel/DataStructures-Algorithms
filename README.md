@@ -202,7 +202,7 @@ Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆ
            if (array[in] < array[min]) {
               min = in;
            }
-      }
-   swap(out, min);
+       }
+       swap(out, min);
    }
    ```
