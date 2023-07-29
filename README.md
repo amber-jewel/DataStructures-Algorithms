@@ -196,5 +196,13 @@ Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆ
   3. ငယ်ရင် တန်ဖိုးချင်း နေရာပြောင်းမယ် (swapping data)။
   4. Data တွေ အကုန်စီမပြီးမချင်း အဆင့် i, ii and iii ကို ထပ်ခါတစ်လဲလဲ လုပ်ဆောင်မယ်။ အဆင့် ii မှာ data နှိုင်းယှဉ်တဲ့အခါ array အခန်းကို တစ်ခါနှိုင်းယှဉ်တိုင်း တစ်ခန်းတိုးတိုးပြီး နှိုင်းယှဉ်သွားမယ်။
    ```java
-   
+   for (int out = 0; out < array.length - 1; out++) {
+       int min = out;
+       for (int in = out + 1; in < array.length - 1; in++) {
+           if (array[in] < array[min]) {
+              min = in;
+   }
+   }
+   swap(out, min);
+   }
    ```
