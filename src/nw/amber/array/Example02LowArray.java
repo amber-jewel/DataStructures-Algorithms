@@ -5,7 +5,7 @@ public class Example02LowArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LowArr lowArr = new LowArr(100);
-		int nElem = 0;
+		int nElems = 0;
 		int i, key;
 		
 		lowArr.setElem(0, 11);
@@ -13,21 +13,21 @@ public class Example02LowArray {
 		lowArr.setElem(2, 33);
 		lowArr.setElem(3, 44);
 		lowArr.setElem(4, 55);
-		nElem = 5;
+		nElems = 5;
 		
-		for (i = 0; i < nElem; i++) {
+		for (i = 0; i < nElems; i++) {
 			System.out.print(lowArr.getElem(i) + " ");
 		}
 		System.out.println("");
 		
 		key = 550;
 		
-		for (i = 0; i < nElem; i++) {
+		for (i = 0; i < nElems; i++) {
 			if (key == lowArr.getElem(i)) {
 				break;
 			}
 		}
-		if (i == nElem) {
+		if (i == nElems) {
 			System.out.println("Couldn't find " + key);
 		} else {
 			System.out.println("Find " + key);
@@ -35,21 +35,21 @@ public class Example02LowArray {
 		
 		key = 440;
 		
-		for (i = 0; i < nElem; i++) {
+		for (i = 0; i < nElems; i++) {
 			if (key == lowArr.getElem(i)) {
 				break;
 			}
 		}
-		if (i == nElem) {
+		if (i == nElems) {
 			System.out.println("Couldn't delete " + key);
 		} else {
-			for (int k = i; k < nElem - 1; k++) {
+			for (int k = i; k < nElems - 1; k++) {
 				lowArr.setElem(k, lowArr.getElem(k + 1));
 			}
-			nElem--;
+			nElems--;
 		}
 		
-		for (i = 0; i < nElem; i++) {
+		for (i = 0; i < nElems; i++) {
 			System.out.print(lowArr.getElem(i) + " ");
 		}
 		System.out.println("");

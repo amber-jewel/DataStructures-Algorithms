@@ -37,21 +37,21 @@ public class Example03HighArray {
 
 class HighArray {
 	private long[] a;
-	private int nElem;
+	private int nElems;
 	
 	public HighArray(int size) {
 		a = new long[size];
-		nElem = 0;
+		nElems = 0;
 	}
 	
 	public void insert(long value) {
-		a[nElem] = value;
-		nElem++;
+		a[nElems] = value;
+		nElems++;
 	}
 	
 	public boolean find(long key) {
 		int i;
-		for (i = 0; i < nElem; i++) {
+		for (i = 0; i < nElems; i++) {
 			if (key == a[i]) {
 				return true;
 			}
@@ -64,13 +64,13 @@ class HighArray {
 	
 	public boolean delete(long key) {
 		// int i;
-		for (int i = 0; i < nElem; i++) {
+		for (int i = 0; i < nElems; i++) {
 			if (key == a[i]) {
 				// break;
-				for (int k = i; k < nElem - 1; k++) {
+				for (int k = i; k < nElems - 1; k++) {
 					a[k] = a[k + 1];
 				}
-				nElem--;
+				nElems--;
 				return true;
 			}
 		}
@@ -89,11 +89,11 @@ class HighArray {
 	}
 	
 	public int getNElem() {
-		return nElem;
+		return nElems;
 	}
 	
 	public void display() {
-		for (int i = 0; i < nElem; i++) {
+		for (int i = 0; i < nElems; i++) {
 			System.out.print(a[i] + " ");
 		}
 		System.out.println("");
