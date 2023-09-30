@@ -23,7 +23,7 @@ Array ထဲမှာ ပါဝင်တဲ့ data တွေ ရဲ့ type တ
  ```java
  int[] intArr = new int[5];
  String[] strArr = new String[5];
- intArr သည် integer data type တွေဘဲ ရှိ  တဲ့ integer တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။      strArr သည် string data type တွေဘဲရှိတဲ့  string တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။
+ intArr သည် integer data type တွေဘဲရှိတဲ့ integer တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။  strArr သည် string data type တွေဘဲရှိတဲ့ string တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။
  ```
 
 
