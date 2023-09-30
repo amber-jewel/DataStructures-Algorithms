@@ -1,5 +1,7 @@
 # DataStructures-Algorithms
 ***
+# Essential Tips
+
 ## Contents
 1. Array
 2. Simple Sorting
