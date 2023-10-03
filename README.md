@@ -1,6 +1,9 @@
 # DataStructures-Algorithms
 ***
 # Essential Tips
+## Big O Notation
+
+Big O ဆိုတာ computer algorithm တစ်ခုချင်းစီရဲ့ efficiency ကို တိုင်းတာတဲ့ အမှတ်အသားတစ်ခု။
 
 ## Contents
 1. Array
