@@ -7,6 +7,8 @@ Big O ဆိုတာ computer algorithm တစ်ခုချင်းစီရ
 
 Algorithm တစ်ခုရဲ့ efficiency တိုင်းတာတဲ့အချိန်မှာ Big O က အဲ့ algorithm ရဲ့ constant တန်ဖိုးတွေကို ထည့်မတွက်ပါ။
 
+Example - O(1), O(logN), O(N), O(N2), O(N3), ...
+
 ## Contents
 1. Array
 2. Simple Sorting
