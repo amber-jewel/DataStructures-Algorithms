@@ -219,3 +219,8 @@ Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆ
    }
    ```
    5. runtime complexity O(N^2)
+
+
+
+### Insertion Sort
+စိတ်ကူးယှဉ်ခြင်းဖြစ် array အခန်းတစ်ခန်းရဲ့ data ကို မှတ်သားထားမယ်။ အဲ့အခန်းရဲ့ ဘယ်ဘက်မှာရှိတဲ့ အခန်းတွေဟာ သူ့ဘာသာ စီနေတဲ့ data (partially sorted data) နဲ့ ညာဘက်မှာရှိတဲ့ အခန်းတွေဟာ မစီရသေးတဲ့ data။ Partially sorted data က insertion sort မှာ ဖြစ်ပေါ်တယ်။ 
