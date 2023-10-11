@@ -229,9 +229,19 @@ Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆ
 ### Stack
 Stack ဟာ abstract data type ဖြစ်တယ်။ Stack ဟာ Last-In-First-Out (LIFO) mechanism ဖြစ်တယ်။ ဆိုလိုချင်တာက Stack ထဲကို နောက်ဆုံးမှာ ဝင်တဲ့ data က အရင်ဦးဆုံး ပြန်ထွက်မယ့် data ဖြစ်တယ်။ Stack ထဲကို data ထည့်တာကို pushing လုပ်တယ်လို့ ခေါ်ပြီး အဲ့ data ကိုဘဲ stack ထဲက‌နေ ပြန်ဖယ်မယ်ဆိုရင် popping လုပ်တယ်လို့ ခေါ်ပါတယ် (LIFO mechanism ကြောင့် နောက်ဆုံး push data က အရင်ဦးဆုံး first pop data ဖြစ်မှာဘဲ)။ Stack ထဲမှာ နောက်ဆုံးဝင်သွားတဲ့ data ကို read လုပ်ရုံဘဲဆိုရင် peek လုပ်တယ်လို့ခေါ်တယ် (peek operation က stack ရဲ့ အပေါ်ဆုံးကကောင်ကိုဘဲ လုပ်ရမယ်)။ Stack ရဲ့ push and pop က runtime complexity က O(1) constant time ဖြစ်တယ်။
 
-### Push Item Into A Stack With Array
+### Push Item On Top Of Stack With Array
 ```java
 int[] stackArr = new int[size];
 int top = -1;
 stackArr[++top] = ထည့်မယ့် data;
+```
+### Pop Item From Top Of Stack
+```java
+in[] stackArr = {5, 8, 1};
+return stackArr[top--];
+```
+### Peek Item On Top Of Stack
+```java
+int[] stackArr = {5, 8, 1};
+rerurn stackArr[top];
 ```
