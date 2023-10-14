@@ -1,6 +1,6 @@
 package nw.amber.stackandqueue;
 
-public class Example01Stack {
+public class Example01_Stack {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
