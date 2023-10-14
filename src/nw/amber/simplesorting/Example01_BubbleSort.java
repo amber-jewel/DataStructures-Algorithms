@@ -1,6 +1,6 @@
 package nw.amber.simplesorting;
 
-public class Example01BubbleSort {
+public class Example01_BubbleSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

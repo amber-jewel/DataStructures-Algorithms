@@ -1,6 +1,6 @@
 package nw.amber.simplesorting;
 
-public class Exampl04OjectSort {
+public class Example04_OjectSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
