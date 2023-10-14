@@ -223,4 +223,43 @@ Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆ
 
 
 ### Insertion Sort
-စိတ်ကူးယှဉ်ခြင်းဖြစ် array အခန်းတစ်ခန်းရဲ့ data ကို မှတ်သားထားမယ်။ အဲ့အခန်းရဲ့ ဘယ်ဘက်မှာရှိတဲ့ အခန်းတွေဟာ သူ့ဘာသာ စီနေတဲ့ data (partially sorted data) နဲ့ ညာဘက်မှာရှိတဲ့ အခန်းတွေဟာ မစီရသေးတဲ့ data။ Partially sorted data က insertion sort မှာ ဖြစ်ပေါ်တယ်။ 
+စိတ်ကူးယှဉ်ခြင်းဖြစ် array အခန်းတစ်ခန်းရဲ့ data ကို မှတ်သားထားမယ်။ အဲ့အခန်းရဲ့ ဘယ်ဘက်မှာရှိတဲ့ အခန်းတွေဟာ သူ့ဘာသာ စီနေတဲ့ data (partially sorted data) နဲ့ ညာဘက်မှာရှိတဲ့ အခန်းတွေဟာ မစီရသေးတဲ့ data။ Partially sorted data က insertion sort မှာ ဖြစ်ပေါ်တယ်။ Array ကို ဘယ်ဘက် ညာဘက် ဆိုပြီး နှစ်ပိုင်းခွဲမယ်။ ဘယ်ဖက်က သူ့ဘာသာနဂိုစီထားတဲ့ data တွေ နဲ့ ညာဖက်ကတော့ မစီရသေးတဲ့ data တွေ။ ညာဖက်က မစီရသေးတဲ့ data တစ်ခုချင်းစီကို နဂိုစီထားတဲ့ ဘက်ဖက်ခြမ်းထဲကို ထည့်မယ်။ 
+
+- algorithm
+  1. array ကို နှစ်ပိုင်းခွဲတဲ့ပုံစံဖြင့် ကြည့်မယ်။ ဘယ်ဖက်က နဂိုစီထားတဲ့ data တွေ နဲ့ ညာဖက်က မစီရသေးတဲ့ data တွေ
+  2. ညာဖက်က ပထမဆုံး data ကို မှတ်မယ်
+  3. အဲ့ data ကို ဘယ်ဖက်ထဲကို သူ့နေရာမှန်ရောက်အောင် ပို့မယ်
+  4. ညာဖက်က data တွေ မကုန်မချင်း အဆင့် ii နဲ့ iii ကို ထပ်ခါတလဲလဲ လုပ်မယ်
+  ```java
+  int[] arr = {6, 2, 9, 10, 1};
+  for (int out = 1; out < array.length; out++) {
+      long temp = array[out];
+      int in = out;
+      while (in > 0 && array[in - 1] >= temp) {
+          array[in] = array[in - 1];
+          --in;
+  }
+     array[in] = temp;
+  }
+  ```
+
+# Stack & Queue
+### Stack
+Stack ဟာ abstract data type ဖြစ်တယ်။ Stack ဟာ Last-In-First-Out (LIFO) mechanism ဖြစ်တယ်။ ဆိုလိုချင်တာက Stack ထဲကို နောက်ဆုံးမှာ ဝင်တဲ့ data က အရင်ဦးဆုံး ပြန်ထွက်မယ့် data ဖြစ်တယ်။ Stack ထဲကို data ထည့်တာကို pushing လုပ်တယ်လို့ ခေါ်ပြီး အဲ့ data ကိုဘဲ stack ထဲက‌နေ ပြန်ဖယ်မယ်ဆိုရင် popping လုပ်တယ်လို့ ခေါ်ပါတယ် (LIFO mechanism ကြောင့် နောက်ဆုံး push data က အရင်ဦးဆုံး first pop data ဖြစ်မှာဘဲ)။ Stack ထဲမှာ နောက်ဆုံးဝင်သွားတဲ့ data ကို read လုပ်ရုံဘဲဆိုရင် peek လုပ်တယ်လို့ခေါ်တယ် (peek operation က stack ရဲ့ အပေါ်ဆုံးကကောင်ကိုဘဲ လုပ်ရမယ်)။ Stack ရဲ့ push and pop က runtime complexity က O(1) constant time ဖြစ်တယ်။
+
+### Push Item On Top Of Stack With Array
+```java
+int[] stackArr = new int[size];
+int top = -1;
+stackArr[++top] = ထည့်မယ့် data;
+```
+### Pop Item From Top Of Stack
+```java
+in[] stackArr = {5, 8, 1};
+return stackArr[top--];
+```
+### Peek Item On Top Of Stack
+```java
+int[] stackArr = {5, 8, 1};
+rerurn stackArr[top];
+```
