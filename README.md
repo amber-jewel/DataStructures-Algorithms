@@ -263,3 +263,6 @@ return stackArr[top--];
 int[] stackArr = {5, 8, 1};
 rerurn stackArr[top];
 ```
+
+### Queue
+Queue ဟာလည်းဘဲ abstract data type ဖြစ်တယ်။ Queue က First-In-First-Out (FIFO) mechanism သုံးထားတယ်။ ဆိုလိုချင်တာက queue ထဲကို ပထမဦးဆုံးဝင်တဲ့ data က ပထမဦးဆုံး ပြန်ထွက်မှာ။ ဥပမာအနေနဲ့ကတော့ - Bank, Airlines, Movie Centre, etc... ဒီဟာတွေက queue ကို နှိုင်းယှဉ်တဲ့နေရာမှာ မြင်သာတဲ့အရာတွေဘဲ ဘာလို့လဲဆိုတော့ ရှေ့ဆုံးက လူတွေကဘဲ အရင်ဦးဆုံး လုပ်ဆောင်ကြရလို့။ 
