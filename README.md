@@ -265,4 +265,4 @@ rerurn stackArr[top];
 ```
 
 ### Queue
-Queue ဟာလည်းဘဲ abstract data type ဖြစ်တယ်။ Queue က First-In-First-Out (FIFO) mechanism သုံးထားတယ်။ ဆိုလိုချင်တာက queue ထဲကို ပထမဦးဆုံးဝင်တဲ့ data က ပထမဦးဆုံး ပြန်ထွက်မှာ။ ဥပမာအနေနဲ့ကတော့ - Bank, Airlines, Movie Centre, etc... ဒီဟာတွေက queue ကို နှိုင်းယှဉ်တဲ့နေရာမှာ မြင်သာတဲ့အရာတွေဘဲ ဘာလို့လဲဆိုတော့ ရှေ့ဆုံးက လူတွေကဘဲ အရင်ဦးဆုံး လုပ်ဆောင်ကြရလို့။ 
+Queue ဟာလည်းဘဲ abstract data type ဖြစ်တယ်။ Queue က First-In-First-Out (FIFO) mechanism သုံးထားတယ်။ ဆိုလိုချင်တာက queue ထဲကို ပထမဦးဆုံးဝင်တဲ့ data က ပထမဦးဆုံး ပြန်ထွက်မှာ။ ဥပမာအနေနဲ့ကတော့ - Bank, Airlines, Movie Centre, etc... ဒီဟာတွေက queue ကို နှိုင်းယှဉ်တဲ့နေရာမှာ မြင်သာတဲ့အရာတွေဘဲ ဘာလို့လဲဆိုတော့ ရှေ့ဆုံးက လူတွေကဘဲ အရင်ဦးဆုံး လုပ်ဆောင်ကြရလို့။ Queue ထဲက data တွေကို ညွှန်းဆိုဖို့အတွက် အဓိကအမှတ်အသားနှစ်ခုလိုတယ် (ဆိုလိုချင်တာက variables နှစ်ခု - front နဲ့ rear ဆိုပြီး နာမည်ကတော့ ကိုယ်ကြိုက်တာပေး)။ ဒီ variables နှစ်ခုရဲ့ position တွေက တစ်သမတ်တည်းရှိမနေပါ။ Queue ထဲကို data ထည့်ရင် rear position ကို တိုးတိုးသွားမယ်။ Queue ထဲက data ကို remove လုပ်ရင် front position ကိုလဲ တိုးတိုးသွားမယ်။ 
