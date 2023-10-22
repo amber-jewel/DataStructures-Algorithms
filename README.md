@@ -282,3 +282,5 @@ int temp = queueArr[front++];
 ```java
 int temp = queueArr[front];
 ```
+
+### Priority Queue
