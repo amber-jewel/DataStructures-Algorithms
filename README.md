@@ -33,8 +33,8 @@ Array ထဲမှာ ပါဝင်တဲ့ data တွေ ရဲ့ type တ
  ```java
  int[] intArr = new int[5];
  String[] strArr = new String[5];
- intArr သည် integer data type တွေဘဲရှိတဲ့ integer တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။  strArr သည် string data type တွေဘဲရှိတဲ့ string တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။
  ```
+ intArr သည် integer data type တွေဘဲရှိတဲ့ integer တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။  strArr သည် string data type တွေဘဲရှိတဲ့ string တန်ဖိုးတွေဘဲ လက်ခံနိုင်တယ်။
 
 
 Array ရဲ့ အားနည်းချက်ကတော့ fixed size ဖြစ်တယ်။ သူတို့ကို initialize လုပ်တဲ့ အချိန် နဲ့ new operator သုံးတဲ့ အချိန်က စပြီး သူတို့ရဲ့ array အခန်းတွေသည် ထပ်တိုး၍ မရတော့ပါ။ အားသာချက်ကတော့ array အခန်းတွေရဲ့ (index) နံပါတ်ကိုသိရင် သူတို့ရဲ့ (operation) လုပ်ဆောင်ချက်တွေသည် အရမ်းကို မြန်ပါတယ်။
