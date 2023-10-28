@@ -300,3 +300,4 @@ int temp = queueArr[front];
 ```
 
 ### Priority Queue
+Priority queue မှာ data တွေက အစီအစဉ်တကြ စီစဉ်ထားတယ်။ Data တွေကို ascending or descending ကိုယ်ကြိုက်သလို စီစဉ်လို့ ရပါတယ်။ Priority queue ထဲကို data ထည့်ရင် အရင်ဦးဆုံး သင့်လျော်တဲ့နေရာလိုက်ရှာမယ်။ 
