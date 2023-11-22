@@ -319,13 +319,13 @@ Priority queue မှာ data တွေက အစီအစဉ်တကျ စီ
       for (i = nElems - 1; i >= 0; i--) {
           if (new data > pq[i]) {
               pq[i + 1] = pq[i];
-  } elese {
-          break;
-  }
-  }
-  pq[i + 1] = new data;
-  nElems++;
-  }
+          } else {
+              break;
+          }
+      }
+      pq[i + 1] = new data;
+      nElems++;
+ }
   ```
 ### Remove data from Priority Queue
  - Algorithm
