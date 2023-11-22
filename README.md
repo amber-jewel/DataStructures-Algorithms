@@ -300,4 +300,45 @@ int temp = queueArr[front];
 ```
 
 ### Priority Queue
-Priority queue မှာ data တွေက အစီအစဉ်တကြ စီစဉ်ထားတယ်။ Data တွေကို ascending or descending ကိုယ်ကြိုက်သလို စီစဉ်လို့ ရပါတယ်။ Priority queue ထဲကို data ထည့်ရင် အရင်ဦးဆုံး သင့်လျော်တဲ့နေရာလိုက်ရှာမယ်။ နေရာတွေ့တာနဲ့ အဲ့နေရာက data က စပြီး shift upward လုပ်မယ်။ ဆိုလိုချင်တာက နဂိုရှိပြီးသား dataကို တစ်ခန်းတိုးပြီး ပြန်ထည့်သွားမယ်။ ပြီးရင် data အသစ်ကို queue ထဲ ထည့်မယ်။ နဂိုရှိပြီးသား element အရေအတွက်ကို ၁ ပေါင်းသွားမယ်။ Priority queue ထဲက data ကို remove ချင်ရင် queue ထဲက အပေါ်ဆုံးကောင်ကိုဘဲ remove မယ်။ ပြီးရင် နဂိုရှိပြီးသား element အရေအတွက်ကို ၁ နှုတ်သွားမယ်။ Priority queue ရဲ့ efficiency က insert အတွက် O(N) , remove အတွက် O(1).
+Priority queue မှာ data တွေက အစီအစဉ်တကျ စီစဉ်ထားတယ်။ Data တွေကို ascending or descending ကိုယ်ကြိုက်သလို စီစဉ်လို့ ရပါတယ်။ Priority queue ထဲကို data ထည့်ရင် အရင်ဦးဆုံး သင့်လျော်တဲ့နေရာလိုက်ရှာမယ်။ နေရာတွေ့တာနဲ့ အဲ့နေရာက data က စပြီး shift upward လုပ်မယ်။ ဆိုလိုချင်တာက နဂိုရှိပြီးသား dataကို တစ်ခန်းတိုးပြီး ပြန်ထည့်သွားမယ်။ ပြီးရင် data အသစ်ကို queue ထဲ ထည့်မယ်။ နဂိုရှိပြီးသား element အရေအတွက်ကို ၁ ပေါင်းသွားမယ်။ Priority queue ထဲက data ကို remove ချင်ရင် queue ထဲက အပေါ်ဆုံးကောင်ကိုဘဲ remove မယ်။ ပြီးရင် နဂိုရှိပြီးသား element အရေအတွက်ကို ၁ နှုတ်သွားမယ်။ Priority queue ရဲ့ efficiency က insert အတွက် O(N) , remove အတွက် O(1).
+
+### Insert into Priority Queue by array implementation
+- Algorithm
+  1. PQ ထဲမှာ အရင်ဆုံး data တွေ ရှိမရှိ အရင်စစ်မယ်, မရှိရင် data အသစ်ကို PQ ထဲ တန်းထည့်မယ်။
+  2. data တွေ ရှိခဲ့ရင်, new data နဲ့ PQ ထဲ အရင်ရှိပြီးသား data တွေ နဲ့ နှိုင်းယှဉ်ပြီး new data အတွက် သင့်လျော်သောနေရာ လိုက်ရှာမယ်။
+  3. နေရာတွေ့ပြီဆိုရင် data ထည့်မယ်။
+  4. number of elements ကို တစ်တိုးသွားမယ်။
+  5. runtime complexity O(N)
+  ```java
+  int[] pq = new int[10];
+  int nElems = 0;
+  int i;
+  if (nElems == 0) {
+      pq[nElems++] = new data;
+  } else {
+      for (i = nElems - 1; i >= 0; i--) {
+          if (new data > pq[i]) {
+              pq[i + 1] = pq[i];
+  } elese {
+          break;
+  }
+  }
+  pq[i + 1] = new data;
+  nElems++;
+  }
+  ```
+### Remove data from Priority Queue
+ - Algorithm
+   1. PQ ထဲက အပေါ်ဆုံးက data ကို remove မယ်။
+   2. Number of elements ကို တစ်လျှော့မယ်။
+   3. runtime complexity O(1)
+   ```java
+   pq[nElems--];
+   ```
+### Only read data on the top of PQ
+- Algorithm
+  1. PQ ထဲက အပေါ်ဆုံးက data ကို read မယ်။
+  2. runtime complexity O(1)
+  ```java
+  pq[nElems - 1];
+  ```
