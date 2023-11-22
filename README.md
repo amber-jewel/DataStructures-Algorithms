@@ -189,7 +189,7 @@ Array ကို ရှာချင်တဲ့ တန်ဖိုးနဲ့ �
 
 
 # Simple Sorting
-### Bubble Sort
+## Bubble Sort
 Array အခန်းနှစ်ခန်း ရဲ့ တန်ဖိုးအချင်းချင်း နှိုင်းယှဉ်မယ်။ ဘယ်ဘက် array အခန်းရဲ့ တန်ဖိုးက ညာဘက် array အခန်းရဲ့ တန်ဖိုးထက် ကြီးနေရင် တန်ဖိုးချင်း နေရာပြောင်းမယ် (swap data)။
 
 - algorithm
@@ -213,7 +213,7 @@ Array အခန်းနှစ်ခန်း ရဲ့ တန်ဖိုးအ
    5. runtime complexity O(N^2)
 
 
-### Selection Sort
+## Selection Sort
 Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆုံးကောင်ကို အရင်ရွေးမယ်။ ရွေးလိုက်တဲ့တန်ဖိုးကို array ရဲ့ ပထမဆုံးအခန်းက တန်ဖိုးနဲ့ နှိုင်းယှဉ်မယ်။ ရွေးလိုက်တဲ့တန်ဖိုးက ငယ်ရင် တန်ဖိုးချင်းနေရာပြောင်းမယ်။ array အခန်းရဲ့ ဘယ်ဘက်ကနေ ညာဘက်ထိ (left->right) တန်ဖိုးတွေ စီနည်း။
 
 - algorithm
@@ -237,7 +237,7 @@ Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆ
 
 
 
-### Insertion Sort
+## Insertion Sort
 စိတ်ကူးယှဉ်ခြင်းဖြစ် array အခန်းတစ်ခန်းရဲ့ data ကို မှတ်သားထားမယ်။ အဲ့အခန်းရဲ့ ဘယ်ဘက်မှာရှိတဲ့ အခန်းတွေဟာ သူ့ဘာသာ စီနေတဲ့ data (partially sorted data) နဲ့ ညာဘက်မှာရှိတဲ့ အခန်းတွေဟာ မစီရသေးတဲ့ data။ Partially sorted data က insertion sort မှာ ဖြစ်ပေါ်တယ်။ Array ကို ဘယ်ဘက် ညာဘက် ဆိုပြီး နှစ်ပိုင်းခွဲမယ်။ ဘယ်ဖက်က သူ့ဘာသာနဂိုစီထားတဲ့ data တွေ နဲ့ ညာဖက်ကတော့ မစီရသေးတဲ့ data တွေ။ ညာဖက်က မစီရသေးတဲ့ data တစ်ခုချင်းစီကို နဂိုစီထားတဲ့ ဘက်ဖက်ခြမ်းထဲကို ထည့်မယ်။ 
 
 - algorithm
@@ -260,7 +260,7 @@ Array အခန်းတွေထဲက တန်ဖိုး အနည်းဆ
   ```
 
 # Stack & Queue
-### Stack
+## Stack
 Stack ဟာ abstract data type ဖြစ်တယ်။ Stack ဟာ Last-In-First-Out (LIFO) mechanism ဖြစ်တယ်။ ဆိုလိုချင်တာက Stack ထဲကို နောက်ဆုံးမှာ ဝင်တဲ့ data က အရင်ဦးဆုံး ပြန်ထွက်မယ့် data ဖြစ်တယ်။ Stack ထဲကို data ထည့်တာကို pushing လုပ်တယ်လို့ ခေါ်ပြီး အဲ့ data ကိုဘဲ stack ထဲက‌နေ ပြန်ဖယ်မယ်ဆိုရင် popping လုပ်တယ်လို့ ခေါ်ပါတယ် (LIFO mechanism ကြောင့် နောက်ဆုံး push data က အရင်ဦးဆုံး first pop data ဖြစ်မှာဘဲ)။ Stack ထဲမှာ နောက်ဆုံးဝင်သွားတဲ့ data ကို read လုပ်ရုံဘဲဆိုရင် peek လုပ်တယ်လို့ခေါ်တယ် (peek operation က stack ရဲ့ အပေါ်ဆုံးကကောင်ကိုဘဲ လုပ်ရမယ်)။ Stack ရဲ့ push and pop က runtime complexity က O(1) constant time ဖြစ်တယ်။
 
 ### Push Item On Top Of Stack With Array
@@ -280,7 +280,7 @@ int[] stackArr = {5, 8, 1};
 rerurn stackArr[top];
 ```
 
-### Queue
+## Queue
 Queue ဟာလည်းဘဲ abstract data type ဖြစ်တယ်။ Queue က First-In-First-Out (FIFO) mechanism သုံးထားတယ်။ ဆိုလိုချင်တာက queue ထဲကို ပထမဦးဆုံးဝင်တဲ့ data က ပထမဦးဆုံး ပြန်ထွက်မှာ။ ဥပမာအနေနဲ့ကတော့ - Bank, Airlines, Movie Centre, etc... ဒီဟာတွေက queue ကို နှိုင်းယှဉ်တဲ့နေရာမှာ မြင်သာတဲ့အရာတွေဘဲ ဘာလို့လဲဆိုတော့ ရှေ့ဆုံးက လူတွေကဘဲ အရင်ဦးဆုံး လုပ်ဆောင်ကြရလို့။ Queue ထဲက data တွေကို ညွှန်းဆိုဖို့အတွက် အဓိကအမှတ်အသားနှစ်ခုလိုတယ် (ဆိုလိုချင်တာက variables နှစ်ခု - front နဲ့ rear ဆိုပြီး နာမည်ကတော့ ကိုယ်ကြိုက်တာပေး)။ ဒီ variables နှစ်ခုရဲ့ position တွေက တစ်သမတ်တည်းရှိမနေပါ။ Queue ထဲကို data ထည့်ရင် rear position ကို တိုးတိုးသွားမယ်။ Queue ထဲက data ကို remove လုပ်ရင် front position ကိုလဲ တိုးတိုးသွားမယ်။ rear position က front position အောက်ရောက်နေရင် circular queue (ring buffer) လို့ ခေါ်တယ်။ ဒါကို broken sequence ဖြစ်တယ်လို့ ယူဆလို့ ရတယ်။ အလားတူဘဲ continuous sequence ကကြတော့ rear position က front position အထက်မှာ တည်ရှိတယ်။ 
 
 ### Insert Data to Queue with array
@@ -299,7 +299,7 @@ int temp = queueArr[front++];
 int temp = queueArr[front];
 ```
 
-### Priority Queue
+## Priority Queue
 Priority queue မှာ data တွေက အစီအစဉ်တကျ စီစဉ်ထားတယ်။ Data တွေကို ascending or descending ကိုယ်ကြိုက်သလို စီစဉ်လို့ ရပါတယ်။ Priority queue ထဲကို data ထည့်ရင် အရင်ဦးဆုံး သင့်လျော်တဲ့နေရာလိုက်ရှာမယ်။ နေရာတွေ့တာနဲ့ အဲ့နေရာက data က စပြီး shift upward လုပ်မယ်။ ဆိုလိုချင်တာက နဂိုရှိပြီးသား dataကို တစ်ခန်းတိုးပြီး ပြန်ထည့်သွားမယ်။ ပြီးရင် data အသစ်ကို queue ထဲ ထည့်မယ်။ နဂိုရှိပြီးသား element အရေအတွက်ကို ၁ ပေါင်းသွားမယ်။ Priority queue ထဲက data ကို remove ချင်ရင် queue ထဲက အပေါ်ဆုံးကောင်ကိုဘဲ remove မယ်။ ပြီးရင် နဂိုရှိပြီးသား element အရေအတွက်ကို ၁ နှုတ်သွားမယ်။ Priority queue ရဲ့ efficiency က insert အတွက် O(N) , remove အတွက် O(1).
 
 ### Insert into Priority Queue by array implementation
@@ -342,3 +342,5 @@ Priority queue မှာ data တွေက အစီအစဉ်တကျ စီ
   ```java
   pq[nElems - 1];
   ```
+
+## Linked List
