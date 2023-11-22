@@ -325,7 +325,7 @@ Priority queue မှာ data တွေက အစီအစဉ်တကျ စီ
       }
       pq[i + 1] = new data;
       nElems++;
- }
+  }
   ```
 ### Remove data from Priority Queue
  - Algorithm
