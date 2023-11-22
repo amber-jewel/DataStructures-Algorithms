@@ -344,3 +344,15 @@ Priority queue မှာ data တွေက အစီအစဉ်တကျ စီ
   ```
 
 ## Linked List
+Linked list က linear data structure နဲ့ dynamic data structure ဖြစ်တယ်။ Linked list ဆိုတဲ့ နာမည်အတိုင်း list ထဲမှာ link တွေ ရှိတယ်။ အဲ့ link အသီးသီးမှာ ကိုယ့်ရဲ့ data records တွေ နဲ့ နောက် link ကို ထပ်ညွှန်းဖို့အတွက် next link ဆိုပြီး ပါမယ်။
+```java
+class Link {
+      private int data;
+      private Link next;
+}
+```
+```java
+class LinkedList {
+      private Link first;
+}
+```
