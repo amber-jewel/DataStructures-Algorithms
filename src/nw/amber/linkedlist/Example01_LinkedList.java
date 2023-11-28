@@ -24,6 +24,7 @@ public class Example01_LinkedList {
 		linkedList.insert(5, 55);
 		linkedList.insert(6, 66);
 		linkedList.insert(7, 77);
+		linkedList.insert(5, 55);
 		
 		linkedList.displayList();
 		
