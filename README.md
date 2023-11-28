@@ -344,7 +344,7 @@ Priority queue မှာ data တွေက အစီအစဉ်တကျ စီ
   ```
 
 ## Linked List
-Linked list က linear data structure နဲ့ dynamic data structure ဖြစ်တယ်။ Linked list ဆိုတဲ့ နာမည်အတိုင်း list ထဲမှာ link တွေ ရှိတယ်။ အဲ့ link အသီးသီးမှာ ကိုယ့်ရဲ့ data records တွေ နဲ့ နောက် link ကို ထပ်ညွှန်းဖို့အတွက် next link ဆိုပြီး ပါမယ်။
+Linked list က linear data structure နဲ့ dynamic data structure ဖြစ်တယ်။ Linked list ဆိုတဲ့ နာမည်အတိုင်း list ထဲမှာ link တွေ ရှိတယ်။ အဲ့ link အသီးသီးမှာ ကိုယ့်ရဲ့ data records တွေ နဲ့ နောက် link ကို ထပ်ညွှန်းဖို့အတွက် next link ဆိုပြီး ပါမယ်။ Linked List ထဲက element တစ်ခုခုကို action (search, delete, etc...) တစ်ခုခုလုပ်ချင်ရင် ပထမဆုံး element ကနေ ကိုယ် action လုပ်ချင်တဲ့ element ထိ ရှာသွားမယ် (O(N))။ Linked List ထဲက element တစ်ခုခုကို တိုက်ရိုက် access မလုပ်နိုင်ဘူး။ ဒါ့ကြောင့် change of element or change of relationship ကို သုံးပြီး access လုပ်ရမယ်။
 ```java
 class Link {
       private int data;
@@ -356,3 +356,23 @@ class LinkedList {
       private Link first;
 }
 ```
+### Insert First in Linked List
+- Algorithm
+  1. အသစ်ထည့်မယ့် new link ကို တည်ဆောက်မယ်။
+  2. new link က next (newLink.next) ထဲကို ပထမ link ကို assign လုပ်မယ်။
+  3. first link ကို new link assign လုပ်မယ်။
+  ```java
+  Link newLink = new Link();
+  newLink.next = first;
+  first = newLink;
+  ```
+### Delete First in Linked List
+- Algorithm
+  1. ပထမဆုံး delete လုပ်မယ့် link ကို ယာရီမှတ်ထားမယ်။
+  2. first link ထဲကို first link ရဲ့ next ကို assign လုပ်မယ်။
+  3. return delete link
+  ```java
+  Link temp = first;
+  first = first.next;
+  return temp;
+  ```
