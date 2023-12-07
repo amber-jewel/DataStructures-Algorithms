@@ -417,3 +417,4 @@ class LinkedList {
      previous.next = current.next;
   }
   ```
+## Double-Ended Lists
