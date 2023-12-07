@@ -376,3 +376,21 @@ class LinkedList {
   first = first.next;
   return temp;
   ```
+### Find Link By Key
+- Algorithm
+  1. First link ကနေ စရမှာဘဲ။
+  2. Linked list ထဲမှာ ရှိတဲ့ link အသီးသီး ထဲက key နဲ့ ကိုယ်ရှာချင်တဲ့ key နဲ့ မတွေ့မချင်း တိုက်စစ်မယ်။
+  3. ရှာတွေ့ရင် အဲ့ link return ပြန်နယ်။
+  4. ရှာမတွေ့ခဲ့ရင် failed မယ်။
+  5. runtime complexity O(N)
+  ```java
+  Link current = first;
+  while (current.key != key) {
+        if (current.next == null) {
+           return null;
+        } else {
+           current = current.next;
+        }
+  }
+  return current;
+  ```
