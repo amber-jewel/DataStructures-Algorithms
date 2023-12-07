@@ -394,3 +394,26 @@ class LinkedList {
   }
   return current;
   ```
+### Delete Link By Specified Key
+- Algorithm
+  1. Linked list ထဲမှာ ရှိတဲ့ link အားလုံး နဲ့ ကိုယ် delete ချင်တဲ့ link နဲ့ မတွေ့မချင်း တိုက်စစ်မယ်။
+  2. ရှာတွေ့ခဲ့ရင် delete link က list ထဲက first link ဖြစ်နေလျှင် first link ကို first.next link နဲ့ assign လုပ်။ တကယ်လို့ first link မဟုတ်ခဲ့သော် delete link ရဲ့ ရှေ့က link နဲ့ delete link ရဲ့ နောက်က link ကို ပြန်ဆက်မယ်။
+  3. ရှာမတွေ့ခဲ့ရင် operation failed.
+  4. runtime complexity O(N)
+  ```java
+  Link current = first;
+  Link previous = null;
+  while (current.key != key) {
+        if (current.next == null) {
+           return null;
+        } else {
+           previous = current;
+           current = current.next;
+        }
+  }
+  if (current == first) {
+     first = first.next;
+  } else {
+     previous.next = current.next;
+  }
+  ```
