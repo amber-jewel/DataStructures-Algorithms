@@ -417,4 +417,30 @@ class LinkedList {
      previous.next = current.next;
   }
   ```
-## Double-Ended Lists
+## Double-Ended Linked List
+Double ended linked list က ordinary linked list ထက် အပို feature တခု ပိုပါလာတယ်။ Last ဆိုတဲ့ reference variable တခု, အဲ့ဒါက linked list ထဲက နောက်ဆုံး link ကို လှမ်းညွှန်းဆိုနေတာ။ အဲ့ link ပေါ် အခြေခံပြီး new link ကို linked list ရဲ့ နောက်ဆုံးမှာ တိုက်ရိုက် insert လုပ်နိုင်တယ်။ Ordinary linked list မှာလဲ new link ကို နောက်ဆုံးမှာ ထည့်နိုင်တယ် ဒါပေမယ့် နောက်ဆုံးရောက်ဖို့ chain of links mechanism ကို အရင်အသုံးပြုရနယ်။
+```java
+public class Link {
+       public int data;
+       public Link next;
+}
+
+class DoubleEndedLinkedList {
+      private Link first; // indicate first link in list
+      private Link last; // indicate last link in list
+}
+```
+### Insert First into Double Ended Linked List
+- Algorithm
+  1. new link ကို အရင် create လ်ုမယ်။
+  2. empty list ဆိုရင် last ထဲကိုလဲ new link နဲ့ assign လုပ်မယ်။
+  3. new link ထဲက next ကို first link နဲ့ assign လုပ်မယ်။
+  4. first link ကို new link နဲ့ assign လုပ်မယ်။
+  ```java
+  Link newLink = new Link();
+  if (isEmpty()) {
+      last = newLink;
+  }
+  newLink.next = first;
+  first = newLink;
+  ```
