@@ -1,6 +1,19 @@
 # DataStructures-Algorithms
 ***
 # Essential Tips
+
+## Data structure ဆိုတာ ဘာလဲ။
+Data structure ဆိုတာ data တွေ သိမ်းဆည်းတဲ့အရာကို data structure လို့ ခေါ်တာဘဲ။ Data structure က ဘာတွေရှိမလဲဆိုတော့ Array, Linked Lists, Stacks, Queues, Trees and Hash Table... ဒါတွေက data structure တွေ ဖြစ်တယ်။
+
+## Algorithms ဆိုတာ ဘာလဲ။
+ကိစ္စတခုခုကို ပြီးမြောက်အောင် လုပ်ဆောင်ဖို့ လိုအပ်တဲ့ တာဝန်အဆင့်ဆင့်ကို Algorithms လို့ ခေါ်တယ်။ ဥပမာ - ကြက်ဥကြော်စားမယ်
+1. ဒယ်ဗန်းကို မီးပလပ်ထိုးမယ်။
+2. မီးနဲနဲပူလာရင် ဆီထည့်မယ်။
+3. ဆီလေးပူလာရင် ကြည်ဥဖောက်ထည့်မယ်(ဟိုဘက်ဒီဘက်လှန်မယ်)။
+4. ကျက်ပြီဆိုရင် မီးပလပ်ဖြုတ်မယ်။
+5. ပြီးရင် စားလို့ရပြီ။
+ကြက်ဥကြော်ကျက်ဖို့ ဒီလိုလုပ်ဆောင်တဲ့အဆင့်တွေအားလုံးဟာ algorithm ဘဲ။
+
 ## Big O Notation
 
 Big O ဆိုတာ computer algorithm တစ်ခုချင်းစီရဲ့ efficiency ကို တိုင်းတာတဲ့ အမှတ်အသားတစ်ခု။
