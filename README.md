@@ -18,7 +18,7 @@ Data structure ဆိုတာ data တွေ သိမ်းဆည်းတဲ�
 
 Big O ဆိုတာ computer algorithm တစ်ခုချင်းစီရဲ့ efficiency ကို တိုင်းတာတဲ့ အမှတ်အသားတစ်ခု။
 
-Algorithm တစ်ခုရဲ့ efficiency တိုင်းတာတဲ့အချိန်မှာ Big O က အဲ့ algorithm ရဲ့ constant တန်ဖိုးတွေကို ထည့်မတွက်ပါ။
+Algorithm တစ်ခုရဲ့ efficiency (or) speed တိုင်းတာတဲ့အချိန်မှာ Big O က အဲ့ algorithm ရဲ့ constant တန်ဖိုးတွေကို ထည့်မတွက်ပါ။
 
 Example - O(1), O(logN), O(N), O(N^2), O(N^3), ...
 
