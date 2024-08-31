@@ -3,7 +3,7 @@
 # Essential Tips
 
 ## Data structure ဆိုတာ ဘာလဲ။
-Data structure ဆိုတာ data တွေ သိမ်းဆည်းတဲ့အရာကို data structure လို့ ခေါ်တာဘဲ။ Data structure က ဘာတွေရှိမလဲဆိုတော့ Array, Linked Lists, Stacks, Queues, Trees and Hash Table... ဒါတွေက data structure တွေ ဖြစ်တယ်။
+Data structure ဆိုတာ data တွေကို computer memory or hard disk တွေပေါ်မှာသိမ်းဆည်းတဲ့အရာကို data structure လို့ ခေါ်တာဘဲ။ Data structure က ဘာတွေရှိမလဲဆိုတော့ Array, Linked Lists, Stacks, Queues, Trees and Hash Table... ဒါတွေက data structure တွေ ဖြစ်တယ်။
 
 ## Algorithms ဆိုတာ ဘာလဲ။
 ကိစ္စတခုခုကို ပြီးမြောက်အောင် လုပ်ဆောင်ဖို့ လိုအပ်တဲ့ တာဝန်အဆင့်ဆင့်ကို Algorithms လို့ ခေါ်တယ်။ ဥပမာ - ကြက်ဥကြော်စားမယ်
